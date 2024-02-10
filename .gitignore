@@ -1,0 +1,11 @@
+node_modules
+config_file
+package-lock.json
+logs
+docker/*.zip
+docker/*.7z
+docker/*.tar
+*.pem
+
+.vscode
+docker/db_volume

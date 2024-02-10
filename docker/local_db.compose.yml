@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  db:
+    image: mysql:8
+    restart: always
+    volumes:
+      - ./db_volume:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "adminpass123"
+      MYSQL_DATABASE: "anomologita-local"
+      MYSQL_USER: "admin"
+      MYSQL_PASSWORD: "adminpass123"
+    ports:
+      - "3306:3306"
+volumes:
+  db_volume:
